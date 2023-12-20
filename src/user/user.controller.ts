@@ -1,5 +1,5 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { UserService } from '../service/user.service';
+import { UserService } from './user.service';
 import { Prisma } from '../../prisma';
 import {
   ApiBody,
@@ -8,7 +8,7 @@ import {
   ApiResponse,
   ApiTags,
 } from '@nestjs/swagger';
-import { CreateUserInput } from '../dto/user.dto';
+import { CreateUserInput } from './dto/user.dto';
 
 @Controller('User')
 @ApiTags('사용자')
