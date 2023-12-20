@@ -1,7 +1,7 @@
 import { Injectable, Post } from '@nestjs/common';
 import { CreateUserInput } from './dto/user.dto';
 import { ApiBody } from '@nestjs/swagger';
-import { PrismaService } from '../service/prisma.service';
+import { PrismaService } from '../prisma.service';
 
 @Injectable()
 export class UserRepository {
